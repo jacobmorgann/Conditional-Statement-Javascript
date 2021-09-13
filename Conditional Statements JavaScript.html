@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let number1 = prompt("Please enter a whole number: ");
+        number1 = parseInt(number1);
+        console.log(number1);
+        if (!(isNaN(number1))) {
+            let operator = prompt("please enter the operator you would like to use: ");
+            switch(operator){
+                case "+":
+                    let number2 = prompt("Please enter another whole number: ");
+                    number2 = parseInt(number2);
+                    console.log(number2);
+                    if (!(isNaN(number2))) {
+                        let answer = number1 + number2;
+                        answer = parseInt(answer);
+                        console.log(answer);
+                        alert("The answer is: " + answer);
+                
+                    }
+                    else {
+                        alert("That is not a number");
+                    }
+                    break;
+                case "-":
+                    let number3 = prompt("Please enter another whole number: ");
+                    number3 = parseInt(number3);
+                    console.log(number3);
+                    if (!(isNaN(number3))) {
+                        let answer = number1 - number3;
+                        answer = parseInt(answer);
+                        console.log(answer);
+                        alert("The answer is: " + answer);
+                
+                    }
+                    else {
+                        alert("That is not a number");
+                    }
+                    break;
+                case "*":
+                    let number4 = prompt("Please enter another whole number: ");
+                    number4 = parseInt(number4);
+                    console.log(number4);
+                    if (!(isNaN(number1))) {
+                        let answer = number1 * number4;
+                        answer = parseInt(answer);
+                        console.log(answer);
+                        alert("The answer is: " + answer);
+                
+                    }
+                    else {
+                        alert("That is not a number");
+                    }
+                    break;    
+                case "/":
+                    let number5 = prompt("Please enter another whole number: ");
+                    number5 = parseInt(number5);
+                    console.log(number5);
+                    if (!(isNaN(number1))) {
+                        let answer = number1 / number5;
+                        answer = parseInt(answer);
+                        console.log(answer);
+                        alert("The answer is: " + answer)
+                
+                    }
+                    else {
+                        alert("That is not a number");
+                    }
+                    break;    
+                default:
+                    alert("There is no operation for that: choose + - * or / ");
+                    break;
+            }
+
+        }
+        else {
+            alert("That is not a number");
+        }
+    </script>
+</body>
+</html>
